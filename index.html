@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- fontawesome script -->
+  <script src="https://kit.fontawesome.com/f0a01a6803.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+<body>
+
+  <main>
+    <section class="logo" >
+      <img src="./images/logo.svg" alt="logo of ping">
+    </section>
+    <section class="headings" >
+      <h1 class="headings__main"><span>We are launching </span>soon!</h1>
+      <p class="call-to-action">Subscribe and get notified</p>
+    </section>
+    <form id="form-email">
+      <div class="input-box" id="input-box">
+        <input class="input-email" type="text" id="email-input" placeholder="Your email address..." onmousedown="emailValidation()">
+      </div>
+      <input class="submit-email"  type="submit" id="email-submit" value= "Notify Me" onclick="emailValidation()">
+    </form>
+    <p id="email-prompt"></p>
+    
+    <section class="dashboard-image">
+      <img src="./images/illustration-dashboard.png" alt="illustration of dashboard" class="dashboard-img-responsive">
+    </section>
+    <section class="social-icons">
+      <ul>
+        <li><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><ion-icon name="logo-twitter"></ion-icon></li>
+        <li><ion-icon name="logo-instagram"></ion-icon></li>
+      </ul>
+    </section>
+    <footer>
+      <section class="footer">&copy; Copyright Ping. All rights reserved.</section>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">darkb<del>o</del><sup>a</sup>ldman</a>.
+      </p>
+    </footer>
+
+  </main>
+
+  
+  
+  <!-- ionicons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- custom javascript -->
+  <script src="./script.js"></script>
+</body>
+</html>
