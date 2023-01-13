@@ -18,5 +18,5 @@ function emailValidation() {
         emailInput.style.border = "1px solid green" 
     }
     emailInput.focus()
-    emailInput.value = ''
+    
 }
