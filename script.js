@@ -11,14 +11,12 @@ function emailValidation() {
         // adding a element            
         emailPrompt.innerHTML = "Please provide a valid email address"
         formEmail.after(emailPrompt) 
-        emailInput.style.border = "1px solid red"
-        return false;         
+        emailInput.style.border = "1px solid red"       
     } else {
         emailPrompt.innerHTML = "it is a valid email address"
         formEmail.after(emailPrompt) 
-        emailInput.style.border = "1px solid green"
-        
+        emailInput.style.border = "1px solid green" 
     }
-    // return true;
+    emailInput.focus()
+    emailInput.value = ''
 }
-// console.log(emailValidation())
